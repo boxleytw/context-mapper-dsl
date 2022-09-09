@@ -17,7 +17,7 @@
 		<platformSystemProperties />
 		<moduleProperties />
 		<systemProperties />
-		<maven-antrun-plugin.version>1.7</maven-antrun-plugin.version>
+		<maven-antrun-plugin.version>3.1.0</maven-antrun-plugin.version>
 	</properties>
 	<modules>
 		<module>org.contextmapper.dsl</module>
