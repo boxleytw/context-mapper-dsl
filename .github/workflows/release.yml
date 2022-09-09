@@ -18,7 +18,7 @@ jobs:
     - name: Install Graphviz
       run: sudo apt-get -y install graphviz
     - name: Gradle caches  
-      uses: actions/cache@v2
+      uses: actions/cache@v3
       with:
         path: |
           ~/.gradle/caches
@@ -45,7 +45,7 @@ jobs:
     - name: Install Graphviz
       run: sudo apt-get -y install graphviz
     - name: Cache local Maven repository
-      uses: actions/cache@v2
+      uses: actions/cache@v3
       with:
         path: ~/.m2/repository
         key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
@@ -72,7 +72,7 @@ jobs:
     - name: Install Graphviz
       run: sudo apt-get -y install graphviz
     - name: Gradle caches  
-      uses: actions/cache@v2
+      uses: actions/cache@v3
       with:
         path: |
           ~/.gradle/caches
@@ -113,7 +113,7 @@ jobs:
     - name: Install Graphviz
       run: sudo apt-get -y install graphviz
     - name: Cache local Maven repository
-      uses: actions/cache@v2
+      uses: actions/cache@v3
       with:
         path: ~/.m2/repository
         key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
